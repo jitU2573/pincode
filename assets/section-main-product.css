@@ -1,7 +1,37 @@
 product-info {
   display: block;
 }
-
+.input-box-pincode{
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+  margin-top: 8px;
+}
+#pincode-input{
+  padding: 8px; 
+  width: 150px;
+  border-radius: var(--inputs-radius);
+  height: 38px;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+  min-height: calc(var(--inputs-border-width) * 2);
+  min-width: calc(7rem + (var(--inputs-border-width) * 2));
+}
+#pincode-input:focus-visible {
+    outline: none;
+    border: 2px solid #555;
+    outline-offset: none;
+    box-shadow: none;
+}
+#check-pincode{
+   padding: 8px 16px;
+   border-radius: 4px;
+   cursor: pointer;
+   background: #222222;
+   color: #fff;
+   font-size: 16px;
+   font-weight: 500;
+}
 .product {
   margin: 0;
 }
