@@ -1,0 +1,14 @@
+{{ 'pincode-checker.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'pincode-checker.js' | asset_url }}" defer="defer"></script>
+
+<!-- sections/pincode-validator.liquid -->
+<div class="pincode-validator-section" style="margin-top: 20px;">
+  {% if heading != blank %}
+   <label for="pincode-input">{{ heading }}</label>
+  {% endif %}
+  <div class="input-box-pincode">
+    <input type="text-input" id="pincode-input" placeholder="e.g., 400001" maxlength="6"/>
+    <button id="check-pincode">Check Availability</button>
+  </div>
+  <div id="pincode-status"></div>
+</div>
